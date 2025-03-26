@@ -14,8 +14,7 @@ let myHeading = document.querySelector('h1');
 
 function setUserName() {
   let myName = prompt('Введите свое имя.');
-  let myPassword = prompt('Пароль');
-  if(!myName or !myPassword) {
+  if(!myName) {
     setUserName();
   } else {
     localStorage.setItem('name', myName);
