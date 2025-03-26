@@ -23,6 +23,12 @@ function setUserName() {
   }
 }
 
+if(!localStorage.getItem('name')) {
+  setUserName();
+} else {
+  let storedName = localStorage.getItem('name');
+  myHeading.innerHTML = 'Тест CSS, ' + storedName;
+}
 myButton.onclick = function() {
   setUserName();
 }
