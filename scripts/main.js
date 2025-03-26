@@ -28,6 +28,8 @@ if(!localStorage.getItem('name')) {
   let storedName = localStorage.getItem('name');
   myHeading.innerHTML = 'Тест CSS, ' + storedName;
 }
+
 myButton.onclick = function() {
   setUserName();
 }
+
